@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/interface.dir/src/bin/interface.c.o -o ../bin/interface  libDelphiOffline.a _deps/seal-build/lib/libseal-3.6.a /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.a 

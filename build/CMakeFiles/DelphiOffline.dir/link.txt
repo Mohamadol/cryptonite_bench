@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDelphiOffline.a CMakeFiles/DelphiOffline.dir/src/lib/interface.cpp.o CMakeFiles/DelphiOffline.dir/src/lib/conv2d.cpp.o CMakeFiles/DelphiOffline.dir/src/lib/fc_layer.cpp.o CMakeFiles/DelphiOffline.dir/src/lib/triples_gen.cpp.o
+/usr/bin/ranlib libDelphiOffline.a
