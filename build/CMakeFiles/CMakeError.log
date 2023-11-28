@@ -1,16 +1,16 @@
 Performing C++ SOURCE FILE Test SEAL_ARM64 failed with the following compile output:
 Change Dir: /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e6757/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e6757.dir/build.make CMakeFiles/cmTC_e6757.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7b9ca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b9ca.dir/build.make CMakeFiles/cmTC_7b9ca.dir/build
 gmake[1]: Entering directory '/home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e6757.dir/src.cxx.o
-/usr/bin/c++ -DSEAL_ARM64  -fPIE -o CMakeFiles/cmTC_e6757.dir/src.cxx.o -c /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_7b9ca.dir/src.cxx.o
+/usr/bin/c++ -DSEAL_ARM64  -fPIE -o CMakeFiles/cmTC_7b9ca.dir/src.cxx.o -c /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/src.cxx
 /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/src.cxx:7:18: error: #error 
     7 |                 #error
       |                  ^~~~~
-gmake[1]: *** [CMakeFiles/cmTC_e6757.dir/build.make:78: CMakeFiles/cmTC_e6757.dir/src.cxx.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_7b9ca.dir/build.make:78: CMakeFiles/cmTC_7b9ca.dir/src.cxx.o] Error 1
 gmake[1]: Leaving directory '/home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_e6757/fast] Error 2
+gmake: *** [Makefile:127: cmTC_7b9ca/fast] Error 2
 
 
 ...and run output:
@@ -29,18 +29,18 @@ Source file was:
 Performing C++ SOURCE FILE Test SEAL_MEMSET_S_FOUND failed with the following compile output:
 Change Dir: /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dabb3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dabb3.dir/build.make CMakeFiles/cmTC_dabb3.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_18065/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_18065.dir/build.make CMakeFiles/cmTC_18065.dir/build
 gmake[1]: Entering directory '/home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_dabb3.dir/src.cxx.o
-/usr/bin/c++ -DSEAL_MEMSET_S_FOUND  -fPIE -o CMakeFiles/cmTC_dabb3.dir/src.cxx.o -c /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_18065.dir/src.cxx.o
+/usr/bin/c++ -DSEAL_MEMSET_S_FOUND  -fPIE -o CMakeFiles/cmTC_18065.dir/src.cxx.o -c /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/src.cxx
 /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
 /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/src.cxx:7:17: error: ‘memset_s’ was not declared in this scope; did you mean ‘memset’?
     7 |         int r = memset_s(str, sizeof(str), 'a', 5);
       |                 ^~~~~~~~
       |                 memset
-gmake[1]: *** [CMakeFiles/cmTC_dabb3.dir/build.make:78: CMakeFiles/cmTC_dabb3.dir/src.cxx.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_18065.dir/build.make:78: CMakeFiles/cmTC_18065.dir/src.cxx.o] Error 1
 gmake[1]: Leaving directory '/home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_dabb3/fast] Error 2
+gmake: *** [Makefile:127: cmTC_18065/fast] Error 2
 
 
 ...and run output:
@@ -59,18 +59,18 @@ Source file was:
 Determining if the explicit_memset exist failed with the following output:
 Change Dir: /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_39871/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_39871.dir/build.make CMakeFiles/cmTC_39871.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7d829/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7d829.dir/build.make CMakeFiles/cmTC_7d829.dir/build
 gmake[1]: Entering directory '/home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_39871.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_39871.dir/CheckSymbolExists.c.o -c /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_7d829.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_7d829.dir/CheckSymbolExists.c.o -c /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘explicit_memset’ undeclared (first use in this function)
     8 |   return ((int*)(&explicit_memset))[argc];
       |                   ^~~~~~~~~~~~~~~
 /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
-gmake[1]: *** [CMakeFiles/cmTC_39871.dir/build.make:78: CMakeFiles/cmTC_39871.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_7d829.dir/build.make:78: CMakeFiles/cmTC_7d829.dir/CheckSymbolExists.c.o] Error 1
 gmake[1]: Leaving directory '/home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_39871/fast] Error 2
+gmake: *** [Makefile:127: cmTC_7d829/fast] Error 2
 
 
 File /home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
