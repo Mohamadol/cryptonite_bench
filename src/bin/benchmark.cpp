@@ -96,22 +96,24 @@ int main(int argc, char **argv)
     ServerFHE sfhe = server_keygen(key_share);
 
     // ResNet-50 Benchmarks
-    // string EXP_NAME = "resnet50";
-    // int img_size[48] = {56, 58, 56, 56, 58, 56, 56, 58, 56, 56, 30, 28, 28, 30, 28, 28, 30, 28, 28, 30, 28, 28, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 9, 7, 7, 9, 7, 7, 9, 7};
-    // int kernel_size[48] = {1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1};
-    // int out_c[48] = {64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512, 2048};
-    // int in_c[48] = {64, 64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512};
-    // int stride[48] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1};
-    // int num_layers = 48;
+    string EXP_NAME = "resnet50";
+    int img_size[48] = {56, 56, 56, 56, 56, 56, 56, 56, 56, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 7, 7, 7, 7, 7, 7, 7, 7, 7};
+    int kernel_size[48] = {1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1};
+    int pads[48] = {1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1};
+    int out_c[48] = {64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512, 2048};
+    int in_c[48] = {64, 64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512};
+    int stride[48] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1};
+    int num_layers = 48;
 
     // ResNet-18 Benchmarks
-    string EXP_NAME = "resnet18";
-    int img_size[17] = {28, 28, 28, 28, 28, 14, 14, 14, 14, 7, 7, 7, 7, 4, 4, 4, 4};
-    int kernel_size[17] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
-    int out_c[17] = {64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512, 512};
-    int in_c[17] = {3, 64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512};
-    int stride[17] = {1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1};
-    int num_layers = 17;
+    // string EXP_NAME = "resnet18";
+    // int img_size[17] = {28, 28, 28, 28, 28, 14, 14, 14, 14, 7, 7, 7, 7, 4, 4, 4, 4};
+    // int kernel_size[17] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
+    // int pads[17] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    // int out_c[17] = {64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512, 512};
+    // int in_c[17] = {3, 64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512};
+    // int stride[17] = {1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1};
+    // int num_layers = 17;
 
     printf("Number of Layers : %d\n", num_layers);
 
@@ -132,7 +134,7 @@ int main(int argc, char **argv)
     for (int i = 0; i < num_layers; i++)
     {
         ptr_client_shares[i] = client_encrypt(cfhe, img_size[i], img_size[i], kernel_size[i],
-                                              kernel_size[i], in_c[i], out_c[i], 0, stride[i], stride[i]);
+                                              kernel_size[i], in_c[i], out_c[i], pads[i], stride[i], stride[i]);
     }
     double end_time_enc = omp_get_wtime();
     encryption_duration += end_time_enc - start_time_enc;
@@ -143,7 +145,7 @@ int main(int argc, char **argv)
     for (int i = 0; i < num_layers; i++)
     {
         ptr_server_shares[i] = server_preprocess(cfhe, sfhe, img_size[i], img_size[i], kernel_size[i],
-                                                 kernel_size[i], in_c[i], out_c[i], 0, stride[i], stride[i]);
+                                                 kernel_size[i], in_c[i], out_c[i], pads[i], stride[i], stride[i]);
     }
     double end_time_mask_gen = omp_get_wtime();
     mask_gen_duration += end_time_mask_gen - start_time_mask_gen;
@@ -156,7 +158,7 @@ int main(int argc, char **argv)
 
         he_conv(cfhe, sfhe, ptr_client_shares[i], ptr_server_shares[i],
                 img_size[i], img_size[i], kernel_size[i],
-                kernel_size[i], in_c[i], out_c[i], 0, stride[i], stride[i]);
+                kernel_size[i], in_c[i], out_c[i], pads[i], stride[i], stride[i]);
     }
 
     double end_time_conv = omp_get_wtime();
@@ -169,7 +171,7 @@ int main(int argc, char **argv)
     {
         client_decrypt(cfhe, sfhe, ptr_client_shares[i], ptr_server_shares[i],
                        img_size[i], img_size[i], kernel_size[i],
-                       kernel_size[i], in_c[i], out_c[i], 0, stride[i], stride[i]);
+                       kernel_size[i], in_c[i], out_c[i], pads[i], stride[i], stride[i]);
     }
     double end_time_dec = omp_get_wtime();
     decryption_duration += end_time_dec - start_time_dec;
@@ -180,7 +182,7 @@ int main(int argc, char **argv)
 
     //--------------------------------- saving the file ---------------------------------
     std::filesystem::path dirPath = "./benchmarking/" + EXP_NAME;
-    std::filesystem::path filePath = dirPath  / ("_batch__" + std::to_string(batch_id) + ".csv");
+    std::filesystem::path filePath = dirPath / ("_batch__" + std::to_string(batch_id) + ".csv");
     if (!std::filesystem::exists(dirPath))
         std::filesystem::create_directories(dirPath);
 
