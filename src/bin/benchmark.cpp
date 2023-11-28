@@ -14,7 +14,8 @@
 #include <memory>
 #include <limits>
 #include <omp.h>
-
+#include <fstream>
+#include <filesystem>
 #include <math.h>
 #include "conv2d.h"
 #include "run_conv.cpp"
@@ -179,7 +180,7 @@ int main(int argc, char **argv)
 
     //--------------------------------- saving the file ---------------------------------
     std::filesystem::path dirPath = "./benchmarking/" + EXP_NAME;
-    std::filesystem::path filePath = dirPath / "_batch__" + std::to_str(batch_id) + ".csv";
+    std::filesystem::path filePath = dirPath / "_batch__" + std::to_string(batch_id) + ".csv";
     if (!std::filesystem::exists(dirPath))
         std::filesystem::create_directories(dirPath);
 

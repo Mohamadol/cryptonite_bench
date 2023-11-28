@@ -175,8 +175,8 @@ CMakeFiles/DelphiOffline.dir/clean:
 # Target rules for target CMakeFiles/unittests.dir
 
 # All Build rule for target.
-CMakeFiles/unittests.dir/all: _deps/seal-build/CMakeFiles/seal.dir/all
 CMakeFiles/unittests.dir/all: CMakeFiles/DelphiOffline.dir/all
+CMakeFiles/unittests.dir/all: _deps/seal-build/CMakeFiles/seal.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles --progress-num=51,52,53 "Built target unittests"
@@ -202,8 +202,8 @@ CMakeFiles/unittests.dir/clean:
 # Target rules for target CMakeFiles/benchmark.dir
 
 # All Build rule for target.
-CMakeFiles/benchmark.dir/all: _deps/seal-build/CMakeFiles/seal.dir/all
 CMakeFiles/benchmark.dir/all: CMakeFiles/DelphiOffline.dir/all
+CMakeFiles/benchmark.dir/all: _deps/seal-build/CMakeFiles/seal.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles --progress-num=6,7,8 "Built target benchmark"
@@ -229,8 +229,8 @@ CMakeFiles/benchmark.dir/clean:
 # Target rules for target CMakeFiles/interface.dir
 
 # All Build rule for target.
-CMakeFiles/interface.dir/all: _deps/seal-build/CMakeFiles/seal.dir/all
 CMakeFiles/interface.dir/all: CMakeFiles/DelphiOffline.dir/all
+CMakeFiles/interface.dir/all: _deps/seal-build/CMakeFiles/seal.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interface.dir/build.make CMakeFiles/interface.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interface.dir/build.make CMakeFiles/interface.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mohamadolyaiy/cryptonite_bench/build/CMakeFiles --progress-num=9,10 "Built target interface"
