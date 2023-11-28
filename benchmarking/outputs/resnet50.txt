@@ -1,0 +1,11 @@
+Number of Layers : 48
+Number of args: 3
+Number of Threads: 32
+batch_id: 8
+Encrypting...
+All Encryptions: 22.198634
+Performing convolutions
+All Convs: 318.189889
+Decrypting...
+All Decryptions: 3.450475
+Data written to "./benchmarking/resnet50/_batch__8.csv"
