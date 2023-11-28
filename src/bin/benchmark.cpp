@@ -87,12 +87,24 @@ void benchmark(int image_h, int image_w, int filter_h, int filter_w,
 
 int main(int argc, char **argv)
 {
+    //--------------------------------- timing variables ---------------------------------
+    double encryption_duration = 0.0, decryption_duration = 0.0, HE_conv_duration = 0.0, mask_gen_duration = 0.0;
+
     SerialCT key_share;
     ClientFHE cfhe = client_keygen(&key_share);
     ServerFHE sfhe = server_keygen(key_share);
 
-    // ResNet-18 Benchmarks
+    // ResNet-50 Benchmarks
+    // string EXP_NAME = "resnet50";
+    // int img_size[48] = {56, 58, 56, 56, 58, 56, 56, 58, 56, 56, 30, 28, 28, 30, 28, 28, 30, 28, 28, 30, 28, 28, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 9, 7, 7, 9, 7, 7, 9, 7};
+    // int kernel_size[48] = {1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1};
+    // int out_c[48] = {64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512, 2048};
+    // int in_c[48] = {64, 64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512};
+    // int stride[48] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1};
+    // int num_layers = 48;
 
+    // ResNet-18 Benchmarks
+    string EXP_NAME = "resnet18";
     int img_size[17] = {28, 28, 28, 28, 28, 14, 14, 14, 14, 7, 7, 7, 7, 4, 4, 4, 4};
     int kernel_size[17] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
     int out_c[17] = {64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512, 512};
@@ -104,8 +116,9 @@ int main(int argc, char **argv)
 
     printf("Number of args: %d\n", argc);
     int number_of_threads = atoi(argv[1]);
-
     printf("Number of Threads: %d\n", number_of_threads);
+    int batch_id = atoi(argv[2]);
+    printf("batch_id: %d\n", batch_id);
 
     ClientShares *ptr_client_shares;
     ptr_client_shares = (ClientShares *)malloc(num_layers * sizeof(ClientShares));
@@ -121,13 +134,18 @@ int main(int argc, char **argv)
                                               kernel_size[i], in_c[i], out_c[i], 0, stride[i], stride[i]);
     }
     double end_time_enc = omp_get_wtime();
+    encryption_duration += end_time_enc - start_time_enc;
     printf("All Encryptions: %f\n", end_time_enc - start_time_enc);
 
+    //--------------------------------- mask gen ---------------------------------
+    double start_time_mask_gen = omp_get_wtime();
     for (int i = 0; i < num_layers; i++)
     {
         ptr_server_shares[i] = server_preprocess(cfhe, sfhe, img_size[i], img_size[i], kernel_size[i],
                                                  kernel_size[i], in_c[i], out_c[i], 0, stride[i], stride[i]);
     }
+    double end_time_mask_gen = omp_get_wtime();
+    mask_gen_duration += end_time_mask_gen - start_time_mask_gen;
 
     printf("Performing convolutions\n");
     double start_time_conv = omp_get_wtime();
@@ -141,6 +159,7 @@ int main(int argc, char **argv)
     }
 
     double end_time_conv = omp_get_wtime();
+    HE_conv_duration += end_time_conv - start_time_conv;
     printf("All Convs: %f\n", end_time_conv - start_time_conv);
 
     printf("Decrypting...\n");
@@ -152,9 +171,36 @@ int main(int argc, char **argv)
                        kernel_size[i], in_c[i], out_c[i], 0, stride[i], stride[i]);
     }
     double end_time_dec = omp_get_wtime();
+    decryption_duration += end_time_dec - start_time_dec;
     printf("All Decryptions: %f\n", end_time_dec - start_time_dec);
 
     free(ptr_server_shares);
     free(ptr_client_shares);
+
+    //--------------------------------- saving the file ---------------------------------
+    std::filesystem::path dirPath = "./benchmarking/" + EXP_NAME;
+    std::filesystem::path filePath = dirPath / "_batch__" + std::to_str(batch_id) + ".csv";
+    if (!std::filesystem::exists(dirPath))
+        std::filesystem::create_directories(dirPath);
+
+    std::ofstream file(filePath);
+    if (file.is_open())
+    {
+        file << "encryption"
+             << ","
+             << "mask_gen"
+             << ","
+             << "HE_processing"
+             << ","
+             << "decryption" << std::endl;
+        file << encryption_duration << "," << mask_gen_duration << "," << HE_conv_duration << "," << decryption_duration << std::endl;
+        file.close();
+        std::cout << "Data written to " << filePath << std::endl;
+    }
+    else
+    {
+        std::cerr << "Unable to open file" << std::endl;
+    }
+
     return 0;
 }
