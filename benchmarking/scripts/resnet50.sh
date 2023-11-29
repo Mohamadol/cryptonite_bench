@@ -4,7 +4,7 @@ CORES=32
 
 cd ./../../
 OUT_DIR="./benchmarking/outputs"
-DATA_DIR="./benchmarking/data"
+DATA_DIR="./benchmarking/data/${EXP_NAME}"
 
 mkdir -p $OUT_DIR
 mkdir -p $DATA_DIR

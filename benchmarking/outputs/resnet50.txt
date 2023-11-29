@@ -3,9 +3,9 @@ Number of args: 3
 Number of Threads: 32
 batch_id: 8
 Encrypting...
-All Encryptions: 22.198634
+All Encryptions: 24.120309
 Performing convolutions
-All Convs: 318.189889
+All Convs: 357.203985
 Decrypting...
-All Decryptions: 3.450475
-Data written to "./benchmarking/resnet50/_batch__8.csv"
+All Decryptions: 3.464287
+Data written to "./benchmarking/dataresnet50/_batch__8.csv"
