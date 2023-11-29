@@ -4,7 +4,7 @@ CORES=8
 
 cd ./../../
 OUT_DIR="./benchmarking/outputs"
-DATA_DIR="./benchmarking/data"
+DATA_DIR="./benchmarking/data/resnet18"
 
 mkdir -p $OUT_DIR
 mkdir -p $DATA_DIR

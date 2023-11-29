@@ -106,14 +106,14 @@ int main(int argc, char **argv)
     int num_layers = 48;
 
     // ResNet-18 Benchmarks
-    // string EXP_NAME = "resnet18";
-    // int img_size[17] = {28, 28, 28, 28, 28, 14, 14, 14, 14, 7, 7, 7, 7, 4, 4, 4, 4};
-    // int kernel_size[17] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
-    // int pads[17] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-    // int out_c[17] = {64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512, 512};
-    // int in_c[17] = {3, 64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512};
-    // int stride[17] = {1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1};
-    // int num_layers = 17;
+    string EXP_NAME = "resnet18";
+    int img_size[17] = {30, 30, 30, 30, 30, 30, 16, 16, 16, 16, 9, 9, 9, 9, 6, 6, 6};
+    int kernel_size[17] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
+    int pads[17] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+    int out_c[17] = {64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512, 512};
+    int in_c[17] = {3, 64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512};
+    int stride[17] = {1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1};
+    int num_layers = 17;
 
     printf("Number of Layers : %d\n", num_layers);
 
@@ -181,7 +181,7 @@ int main(int argc, char **argv)
     free(ptr_client_shares);
 
     //--------------------------------- saving the file ---------------------------------
-    std::filesystem::path dirPath = "./benchmarking/data" + EXP_NAME;
+    std::filesystem::path dirPath = "./benchmarking/data/" + EXP_NAME;
     std::filesystem::path filePath = dirPath / ("_batch__" + std::to_string(batch_id) + ".csv");
     if (!std::filesystem::exists(dirPath))
         std::filesystem::create_directories(dirPath);
