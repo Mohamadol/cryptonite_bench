@@ -1,0 +1,10 @@
+Number of Layers : 17
+Number of args: 4
+Number of Threads: 8
+Encrypting...
+All Encryptions: 5.088851
+Performing convolutions
+All Convs: 205.333523
+Decrypting...
+All Decryptions: 0.240392
+Data written to "./benchmarking/data/resnet18/_8_8_30_30/all_layers.csv"
