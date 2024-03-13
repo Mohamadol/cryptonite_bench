@@ -1,4 +1,4 @@
-# Install script for directory: /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util
+# Install script for directory: /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,41 +42,41 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/SEAL-3.6/seal/util" TYPE FILE FILES
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2-impl.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/clang.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/clipnormal.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/common.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/croots.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/defines.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/dwthandler.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/fips202.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/galois.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/gcc.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/globals.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/hash.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/hestdparms.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/intel_seal_ext.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/iterator.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/locks.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/mempool.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/msvc.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/numth.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/pointer.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/polyarithsmallmod.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/polycore.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/rlwe.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/rns.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/scalingvariant.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/ntt.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/streambuf.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarith.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarithmod.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarithsmallmod.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintcore.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/ztools.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2-impl.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/clang.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/clipnormal.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/common.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/croots.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/defines.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/dwthandler.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/fips202.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/galois.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/gcc.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/globals.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/hash.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/hestdparms.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/intel_seal_ext.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/iterator.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/locks.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/mempool.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/msvc.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/numth.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/pointer.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/polyarithsmallmod.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/polycore.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/rlwe.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/rns.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/scalingvariant.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/ntt.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/streambuf.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarith.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarithmod.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarithsmallmod.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintcore.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/ztools.h"
     )
 endif()
 

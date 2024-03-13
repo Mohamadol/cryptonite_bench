@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../bin/interface"
-  "../bin/interface.pdb"
+  "/mnt/mohammad/cryptonite_bench/bin/interface"
+  "/mnt/mohammad/cryptonite_bench/bin/interface.pdb"
   "CMakeFiles/interface.dir/src/bin/interface.c.o"
   "CMakeFiles/interface.dir/src/bin/interface.c.o.d"
 )

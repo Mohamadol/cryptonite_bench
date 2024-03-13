@@ -1,0 +1,1544 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 5.15.0-89-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/mohammad/cryptonite_bench/build/CMakeFiles/3.27.5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /mnt/mohammad/cryptonite_bench/build/CMakeFiles/3.27.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-E00J5A"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-E00J5A"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-E00J5A'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c3d42/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c3d42.dir/build.make CMakeFiles/cmTC_c3d42.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-E00J5A'
+        Building C object CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o -c /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3d42.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c3d42.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccVNyyUr.s
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3d42.dir/'
+         as -v --64 -o CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o /tmp/ccVNyyUr.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_c3d42
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3d42.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o -o cmTC_c3d42 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3d42' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c3d42.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccumIVoh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c3d42 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3d42' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c3d42.'
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-E00J5A'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-E00J5A']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c3d42/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c3d42.dir/build.make CMakeFiles/cmTC_c3d42.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-E00J5A']
+        ignore line: [Building C object CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o -c /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3d42.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c3d42.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccVNyyUr.s]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3d42.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o /tmp/ccVNyyUr.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_c3d42]
+        ignore line: [/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3d42.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o -o cmTC_c3d42 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3d42' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c3d42.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccumIVoh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c3d42 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccumIVoh.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c3d42] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [CMakeFiles/cmTC_c3d42.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-tQ1zkd"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-tQ1zkd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-tQ1zkd'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a34b3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a34b3.dir/build.make CMakeFiles/cmTC_a34b3.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-tQ1zkd'
+        Building CXX object CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o -c /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a34b3.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a34b3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc4bruEG.s
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/11
+         /usr/include/x86_64-linux-gnu/c++/11
+         /usr/include/c++/11/backward
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a34b3.dir/'
+         as -v --64 -o CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc4bruEG.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_a34b3
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a34b3.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a34b3 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a34b3' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a34b3.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEXM47f.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a34b3 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a34b3' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a34b3.'
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-tQ1zkd'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/11]
+          add: [/usr/include/x86_64-linux-gnu/c++/11]
+          add: [/usr/include/c++/11/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+        collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-tQ1zkd']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a34b3/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a34b3.dir/build.make CMakeFiles/cmTC_a34b3.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-tQ1zkd']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o -c /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a34b3.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a34b3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc4bruEG.s]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/11]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
+        ignore line: [ /usr/include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a34b3.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc4bruEG.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_a34b3]
+        ignore line: [/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a34b3.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a34b3 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a34b3' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a34b3.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEXM47f.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a34b3 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccEXM47f.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a34b3] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [CMakeFiles/cmTC_a34b3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "build/_deps/seal-src/cmake/EnableCXX17.cmake:28 (check_cxx_source_compiles)"
+      - "build/_deps/seal-src/CMakeLists.txt:68 (include)"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-fL2SNS"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-fL2SNS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "USE_STD_FOR_EACH_N"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-fL2SNS'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a125f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a125f.dir/build.make CMakeFiles/cmTC_a125f.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-fL2SNS'
+        Building CXX object CMakeFiles/cmTC_a125f.dir/src.cxx.o
+        /usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_a125f.dir/src.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-fL2SNS/src.cxx
+        Linking CXX executable cmTC_a125f
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a125f.dir/link.txt --verbose=1
+        /usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_a125f.dir/src.cxx.o -o cmTC_a125f 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-fL2SNS'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Internal/CheckSourceRuns.cmake:93 (try_run)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/seal-src/cmake/CheckCXXIntrinsicsHeader.cmake:9 (check_cxx_source_runs)"
+      - "build/_deps/seal-src/CMakeLists.txt:268 (include)"
+    checks:
+      - "Performing Test SEAL_ARM64"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-UAXE3y"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-UAXE3y"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SEAL_ARM64_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-UAXE3y'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_67b8a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_67b8a.dir/build.make CMakeFiles/cmTC_67b8a.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-UAXE3y'
+        Building CXX object CMakeFiles/cmTC_67b8a.dir/src.cxx.o
+        /usr/bin/c++ -DSEAL_ARM64  -fPIE -o CMakeFiles/cmTC_67b8a.dir/src.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-UAXE3y/src.cxx
+        /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-UAXE3y/src.cxx:7:18: error: #error 
+            7 |                 #error
+              |                  ^~~~~
+        gmake[1]: *** [CMakeFiles/cmTC_67b8a.dir/build.make:78: CMakeFiles/cmTC_67b8a.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-UAXE3y'
+        gmake: *** [Makefile:127: cmTC_67b8a/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "SEAL_ARM64_EXITCODE"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "build/_deps/seal-src/cmake/CheckCXXIntrinsicsHeader.cmake:29 (check_include_file_cxx)"
+      - "build/_deps/seal-src/CMakeLists.txt:268 (include)"
+    checks:
+      - "Looking for C++ include x86intrin.h"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dXufKM"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dXufKM"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SEAL_INTRIN_HEADER_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dXufKM'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_90590/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_90590.dir/build.make CMakeFiles/cmTC_90590.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dXufKM'
+        Building CXX object CMakeFiles/cmTC_90590.dir/CheckIncludeFile.cxx.o
+        /usr/bin/c++   -fPIE -o CMakeFiles/cmTC_90590.dir/CheckIncludeFile.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dXufKM/CheckIncludeFile.cxx
+        Linking CXX executable cmTC_90590
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90590.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_90590.dir/CheckIncludeFile.cxx.o -o cmTC_90590 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dXufKM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckTypeSize.cmake:254 (check_include_file_cxx)"
+      - "build/_deps/seal-src/cmake/CheckCXXIntrinsicsSpecific.cmake:38 (check_type_size)"
+      - "build/_deps/seal-src/CMakeLists.txt:277 (include)"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ZWQmTz"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ZWQmTz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ZWQmTz'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_159a4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_159a4.dir/build.make CMakeFiles/cmTC_159a4.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ZWQmTz'
+        Building CXX object CMakeFiles/cmTC_159a4.dir/CheckIncludeFile.cxx.o
+        /usr/bin/c++   -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_159a4.dir/CheckIncludeFile.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ZWQmTz/CheckIncludeFile.cxx
+        Linking CXX executable cmTC_159a4
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_159a4.dir/link.txt --verbose=1
+        /usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_159a4.dir/CheckIncludeFile.cxx.o -o cmTC_159a4 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ZWQmTz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckTypeSize.cmake:259 (check_include_file_cxx)"
+      - "build/_deps/seal-src/cmake/CheckCXXIntrinsicsSpecific.cmake:38 (check_type_size)"
+      - "build/_deps/seal-src/CMakeLists.txt:277 (include)"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qCEBt5"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qCEBt5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qCEBt5'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_052fe/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_052fe.dir/build.make CMakeFiles/cmTC_052fe.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qCEBt5'
+        Building CXX object CMakeFiles/cmTC_052fe.dir/CheckIncludeFile.cxx.o
+        /usr/bin/c++   -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_052fe.dir/CheckIncludeFile.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qCEBt5/CheckIncludeFile.cxx
+        Linking CXX executable cmTC_052fe
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_052fe.dir/link.txt --verbose=1
+        /usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_052fe.dir/CheckIncludeFile.cxx.o -o cmTC_052fe 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qCEBt5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckTypeSize.cmake:260 (check_include_file_cxx)"
+      - "build/_deps/seal-src/cmake/CheckCXXIntrinsicsSpecific.cmake:38 (check_type_size)"
+      - "build/_deps/seal-src/CMakeLists.txt:277 (include)"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-m3ISRS"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-m3ISRS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-m3ISRS'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6d54d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6d54d.dir/build.make CMakeFiles/cmTC_6d54d.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-m3ISRS'
+        Building CXX object CMakeFiles/cmTC_6d54d.dir/CheckIncludeFile.cxx.o
+        /usr/bin/c++   -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_6d54d.dir/CheckIncludeFile.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-m3ISRS/CheckIncludeFile.cxx
+        Linking CXX executable cmTC_6d54d
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d54d.dir/link.txt --verbose=1
+        /usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_6d54d.dir/CheckIncludeFile.cxx.o -o cmTC_6d54d 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-m3ISRS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/_deps/seal-src/cmake/CheckCXXIntrinsicsSpecific.cmake:38 (check_type_size)"
+      - "build/_deps/seal-src/CMakeLists.txt:277 (include)"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ep6mFf"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ep6mFf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INT128"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ep6mFf'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7fd90/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7fd90.dir/build.make CMakeFiles/cmTC_7fd90.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ep6mFf'
+        Building CXX object CMakeFiles/cmTC_7fd90.dir/INT128.cpp.o
+        /usr/bin/c++   -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_7fd90.dir/INT128.cpp.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ep6mFf/INT128.cpp
+        Linking CXX executable cmTC_7fd90
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fd90.dir/link.txt --verbose=1
+        /usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_7fd90.dir/INT128.cpp.o -o cmTC_7fd90 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-ep6mFf'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Internal/CheckSourceRuns.cmake:93 (try_run)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/seal-src/cmake/CheckCXXIntrinsicsSpecific.cmake:46 (check_cxx_source_runs)"
+      - "build/_deps/seal-src/CMakeLists.txt:277 (include)"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-RhdtZ7"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-RhdtZ7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SEAL___BUILTIN_CLZLL_FOUND_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-RhdtZ7'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b4e35/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b4e35.dir/build.make CMakeFiles/cmTC_b4e35.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-RhdtZ7'
+        Building CXX object CMakeFiles/cmTC_b4e35.dir/src.cxx.o
+        /usr/bin/c++ -DSEAL___BUILTIN_CLZLL_FOUND  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_b4e35.dir/src.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-RhdtZ7/src.cxx
+        Linking CXX executable cmTC_b4e35
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4e35.dir/link.txt --verbose=1
+        /usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_b4e35.dir/src.cxx.o -o cmTC_b4e35 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-RhdtZ7'
+        
+      exitCode: 0
+    runResult:
+      variable: "SEAL___BUILTIN_CLZLL_FOUND_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Internal/CheckSourceRuns.cmake:93 (try_run)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/seal-src/cmake/CheckCXXIntrinsicsSpecific.cmake:56 (check_cxx_source_runs)"
+      - "build/_deps/seal-src/CMakeLists.txt:277 (include)"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qaY0o6"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qaY0o6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SEAL__ADDCARRY_U64_FOUND_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qaY0o6'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_87f41/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_87f41.dir/build.make CMakeFiles/cmTC_87f41.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qaY0o6'
+        Building CXX object CMakeFiles/cmTC_87f41.dir/src.cxx.o
+        /usr/bin/c++ -DSEAL__ADDCARRY_U64_FOUND  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_87f41.dir/src.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qaY0o6/src.cxx
+        Linking CXX executable cmTC_87f41
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87f41.dir/link.txt --verbose=1
+        /usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_87f41.dir/src.cxx.o -o cmTC_87f41 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-qaY0o6'
+        
+      exitCode: 0
+    runResult:
+      variable: "SEAL__ADDCARRY_U64_FOUND_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Internal/CheckSourceRuns.cmake:93 (try_run)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/seal-src/cmake/CheckCXXIntrinsicsSpecific.cmake:67 (check_cxx_source_runs)"
+      - "build/_deps/seal-src/CMakeLists.txt:277 (include)"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-kLMyui"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-kLMyui"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SEAL__SUBBORROW_U64_FOUND_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-kLMyui'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a5a10/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a5a10.dir/build.make CMakeFiles/cmTC_a5a10.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-kLMyui'
+        Building CXX object CMakeFiles/cmTC_a5a10.dir/src.cxx.o
+        /usr/bin/c++ -DSEAL__SUBBORROW_U64_FOUND  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_a5a10.dir/src.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-kLMyui/src.cxx
+        Linking CXX executable cmTC_a5a10
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5a10.dir/link.txt --verbose=1
+        /usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_a5a10.dir/src.cxx.o -o cmTC_a5a10 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-kLMyui'
+        
+      exitCode: 0
+    runResult:
+      variable: "SEAL__SUBBORROW_U64_FOUND_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Internal/CheckSourceRuns.cmake:93 (try_run)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "build/_deps/seal-src/cmake/CheckMemset.cmake:5 (check_cxx_source_runs)"
+      - "build/_deps/seal-src/CMakeLists.txt:325 (include)"
+    checks:
+      - "Performing Test SEAL_MEMSET_S_FOUND"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-g51iED"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-g51iED"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SEAL_MEMSET_S_FOUND_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-g51iED'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_25e73/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_25e73.dir/build.make CMakeFiles/cmTC_25e73.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-g51iED'
+        Building CXX object CMakeFiles/cmTC_25e73.dir/src.cxx.o
+        /usr/bin/c++ -DSEAL_MEMSET_S_FOUND  -fPIE -o CMakeFiles/cmTC_25e73.dir/src.cxx.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-g51iED/src.cxx
+        /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-g51iED/src.cxx: In function ‘int main()’:
+        /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-g51iED/src.cxx:7:17: error: ‘memset_s’ was not declared in this scope; did you mean ‘memset’?
+            7 |         int r = memset_s(str, sizeof(str), 'a', 5);
+              |                 ^~~~~~~~
+              |                 memset
+        gmake[1]: *** [CMakeFiles/cmTC_25e73.dir/build.make:78: CMakeFiles/cmTC_25e73.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-g51iED'
+        gmake: *** [Makefile:127: cmTC_25e73/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "SEAL_MEMSET_S_FOUND_EXITCODE"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/seal-src/cmake/CheckMemset.cmake:17 (check_symbol_exists)"
+      - "build/_deps/seal-src/CMakeLists.txt:325 (include)"
+    checks:
+      - "Looking for explicit_bzero"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-Mnpmty"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-Mnpmty"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SEAL_EXPLICIT_BZERO_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-Mnpmty'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d6c34/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d6c34.dir/build.make CMakeFiles/cmTC_d6c34.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-Mnpmty'
+        Building C object CMakeFiles/cmTC_d6c34.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -fPIE -o CMakeFiles/cmTC_d6c34.dir/CheckSymbolExists.c.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-Mnpmty/CheckSymbolExists.c
+        Linking C executable cmTC_d6c34
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6c34.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d6c34.dir/CheckSymbolExists.c.o -o cmTC_d6c34 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-Mnpmty'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "build/_deps/seal-src/cmake/CheckMemset.cmake:20 (check_symbol_exists)"
+      - "build/_deps/seal-src/CMakeLists.txt:325 (include)"
+    checks:
+      - "Looking for explicit_memset"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-yp5q58"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-yp5q58"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SEAL_EXPLICIT_MEMSET_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-yp5q58'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c5a37/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c5a37.dir/build.make CMakeFiles/cmTC_c5a37.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-yp5q58'
+        Building C object CMakeFiles/cmTC_c5a37.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -fPIE -o CMakeFiles/cmTC_c5a37.dir/CheckSymbolExists.c.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-yp5q58/CheckSymbolExists.c
+        /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-yp5q58/CheckSymbolExists.c: In function ‘main’:
+        /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-yp5q58/CheckSymbolExists.c:8:19: error: ‘explicit_memset’ undeclared (first use in this function)
+            8 |   return ((int*)(&explicit_memset))[argc];
+              |                   ^~~~~~~~~~~~~~~
+        /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-yp5q58/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        gmake[1]: *** [CMakeFiles/cmTC_c5a37.dir/build.make:78: CMakeFiles/cmTC_c5a37.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-yp5q58'
+        gmake: *** [Makefile:127: cmTC_c5a37/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build/_deps/seal-src/cmake/SEALMacros.cmake:55 (find_package)"
+      - "build/_deps/seal-src/CMakeLists.txt:379 (seal_link_threads)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-rEByVH"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-rEByVH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-rEByVH'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f77fb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f77fb.dir/build.make CMakeFiles/cmTC_f77fb.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-rEByVH'
+        Building C object CMakeFiles/cmTC_f77fb.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_f77fb.dir/src.c.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-rEByVH/src.c
+        Linking C executable cmTC_f77fb
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f77fb.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f77fb.dir/src.c.o -o cmTC_f77fb 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-rEByVH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e40ac/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e40ac.dir/build.make CMakeFiles/cmTC_e40ac.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di'
+        Building C object CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o
+        /usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di/OpenMPTryFlag.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_e40ac.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_e40ac.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwAwi5l.s
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_e40ac.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o /tmp/ccwAwi5l.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.'
+        Linking C executable cmTC_e40ac
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e40ac.dir/link.txt --verbose=1
+        /usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o -o cmTC_e40ac  -v 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_e40ac' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_e40ac.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxGIYMw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e40ac /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_e40ac' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_e40ac.'
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:26 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e40ac/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e40ac.dir/build.make CMakeFiles/cmTC_e40ac.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di']
+        ignore line: [Building C object CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o]
+        ignore line: [/usr/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di/OpenMPTryFlag.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_e40ac.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-cFZ5di/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_e40ac.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwAwi5l.s]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_e40ac.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o /tmp/ccwAwi5l.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.']
+        ignore line: [Linking C executable cmTC_e40ac]
+        ignore line: [/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e40ac.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -fopenmp -v CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o -o cmTC_e40ac  -v ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_e40ac' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_e40ac.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxGIYMw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e40ac /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccxGIYMw.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e40ac] ==> ignore
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [CMakeFiles/cmTC_e40ac.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_842ba/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_842ba.dir/build.make CMakeFiles/cmTC_842ba.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK'
+        Building CXX object CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK/OpenMPTryFlag.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_842ba.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_842ba.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccEaOc6c.s
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/11
+         /usr/include/x86_64-linux-gnu/c++/11
+         /usr/include/c++/11/backward
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_842ba.dir/'
+         as -v --64 -o CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o /tmp/ccEaOc6c.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_842ba
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_842ba.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o -o cmTC_842ba  -v 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_842ba' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_842ba.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnJoKPh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_842ba /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_842ba' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_842ba.'
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:26 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_842ba/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_842ba.dir/build.make CMakeFiles/cmTC_842ba.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK']
+        ignore line: [Building CXX object CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK/OpenMPTryFlag.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_842ba.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-xrxmVK/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_842ba.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccEaOc6c.s]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/11]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
+        ignore line: [ /usr/include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_842ba.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o /tmp/ccEaOc6c.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_842ba]
+        ignore line: [/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_842ba.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -fopenmp -v CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o -o cmTC_842ba  -v ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_842ba' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_842ba.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnJoKPh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_842ba /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/11/crtoffloadend.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccnJoKPh.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_842ba] ==> ignore
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [CMakeFiles/cmTC_842ba.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dBwstH"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dBwstH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dBwstH'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_af2a3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_af2a3.dir/build.make CMakeFiles/cmTC_af2a3.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dBwstH'
+        Building C object CMakeFiles/cmTC_af2a3.dir/OpenMPCheckVersion.c.o
+        /usr/bin/cc   -fopenmp -o CMakeFiles/cmTC_af2a3.dir/OpenMPCheckVersion.c.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dBwstH/OpenMPCheckVersion.c
+        Linking C executable cmTC_af2a3
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af2a3.dir/link.txt --verbose=1
+        /usr/bin/cc  -fopenmp CMakeFiles/cmTC_af2a3.dir/OpenMPCheckVersion.c.o -o cmTC_af2a3 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-dBwstH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-IZgbWC"
+      binary: "/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-IZgbWC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-IZgbWC'
+        
+        Run Build Command(s): /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bf8d3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bf8d3.dir/build.make CMakeFiles/cmTC_bf8d3.dir/build
+        gmake[1]: Entering directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-IZgbWC'
+        Building CXX object CMakeFiles/cmTC_bf8d3.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/c++   -fopenmp -o CMakeFiles/cmTC_bf8d3.dir/OpenMPCheckVersion.cpp.o -c /mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-IZgbWC/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_bf8d3
+        /home/ubuntu/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf8d3.dir/link.txt --verbose=1
+        /usr/bin/c++  -fopenmp CMakeFiles/cmTC_bf8d3.dir/OpenMPCheckVersion.cpp.o -o cmTC_bf8d3 
+        gmake[1]: Leaving directory '/mnt/mohammad/cryptonite_bench/build/CMakeFiles/CMakeScratch/TryCompile-IZgbWC'
+        
+      exitCode: 0
+...

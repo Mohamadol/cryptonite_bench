@@ -12,8 +12,8 @@ set_target_properties(SEAL::seal PROPERTIES
   IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib/libseal-3.6.a"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS SEAL::seal )
-list(APPEND _IMPORT_CHECK_FILES_FOR_SEAL::seal "${_IMPORT_PREFIX}/lib/libseal-3.6.a" )
+list(APPEND _cmake_import_check_targets SEAL::seal )
+list(APPEND _cmake_import_check_files_for_SEAL::seal "${_IMPORT_PREFIX}/lib/libseal-3.6.a" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

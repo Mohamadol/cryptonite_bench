@@ -96,14 +96,14 @@ int main(int argc, char **argv)
     ServerFHE sfhe = server_keygen(key_share);
 
     // ResNet-50 Benchmarks
-    string EXP_NAME = "resnet50";
-    int img_size[48] = {56, 58, 56, 56, 58, 56, 56, 58, 56, 56, 30, 28, 28, 30, 28, 28, 30, 28, 28, 30, 28, 28, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 9, 7, 7, 9, 7, 7, 9, 7};
-    int kernel_size[48] = {1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1};
-    int pads[48] = {0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0};
-    int out_c[48] = {64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512, 2048};
-    int in_c[48] = {64, 64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512};
-    int stride[48] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1};
-    int num_layers = 48;
+    // string EXP_NAME = "resnet50";
+    // int img_size[48] = {56, 58, 56, 56, 58, 56, 56, 58, 56, 56, 30, 28, 28, 30, 28, 28, 30, 28, 28, 30, 28, 28, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 9, 7, 7, 9, 7, 7, 9, 7};
+    // int kernel_size[48] = {1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1};
+    // int pads[48] = {0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0};
+    // int out_c[48] = {64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512, 2048};
+    // int in_c[48] = {64, 64, 64, 256, 64, 64, 256, 64, 64, 256, 128, 128, 512, 128, 128, 512, 128, 128, 512, 128, 128, 512, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 256, 256, 1024, 512, 512, 2048, 512, 512, 2048, 512, 512};
+    // int stride[48] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1};
+    // int num_layers = 48;
 
     // ResNet-18 Benchmarks
     string EXP_NAME = "resnet18";
@@ -120,17 +120,18 @@ int main(int argc, char **argv)
     printf("Number of args: %d\n", argc);
     int number_of_threads = atoi(argv[1]);
     printf("Number of Threads: %d\n", number_of_threads);
-    int batch_id = atoi(argv[2]);
-    printf("batch_id: %d\n", batch_id);
+    int vcores = atoi(argv[2]);
+    int memory = atoi(argv[3]);
 
+
+    printf("Encrypting...\n");
+    double start_time_enc = omp_get_wtime();
     ClientShares *ptr_client_shares;
     ptr_client_shares = (ClientShares *)malloc(num_layers * sizeof(ClientShares));
 
     ServerShares *ptr_server_shares;
     ptr_server_shares = (ServerShares *)malloc(num_layers * sizeof(ServerShares));
 
-    printf("Encrypting...\n");
-    double start_time_enc = omp_get_wtime();
     for (int i = 0; i < num_layers; i++)
     {
         ptr_client_shares[i] = client_encrypt(cfhe, img_size[i], img_size[i], kernel_size[i],
@@ -173,16 +174,18 @@ int main(int argc, char **argv)
                        img_size[i], img_size[i], kernel_size[i],
                        kernel_size[i], in_c[i], out_c[i], pads[i], stride[i], stride[i]);
     }
+    free(ptr_server_shares);
+    free(ptr_client_shares);
     double end_time_dec = omp_get_wtime();
     decryption_duration += end_time_dec - start_time_dec;
     printf("All Decryptions: %f\n", end_time_dec - start_time_dec);
 
-    free(ptr_server_shares);
-    free(ptr_client_shares);
+    double total_duration = encryption_duration + mask_gen_duration + HE_conv_duration + decryption_duration;
 
     //--------------------------------- saving the file ---------------------------------
-    std::filesystem::path dirPath = "./benchmarking/data/" + EXP_NAME;
-    std::filesystem::path filePath = dirPath / ("_batch__" + std::to_string(batch_id) + ".csv");
+    string system_config = "_" + to_string(vcores) + "_" + to_string(vcores) + "_" + to_string(memory) + "_" + to_string(memory);
+    std::filesystem::path dirPath = "./benchmarking/data/" + EXP_NAME + "/" + system_config;
+    std::filesystem::path filePath = dirPath / ("all_layers.csv");
     if (!std::filesystem::exists(dirPath))
         std::filesystem::create_directories(dirPath);
 
@@ -191,12 +194,14 @@ int main(int argc, char **argv)
     {
         file << "encryption"
              << ","
-             << "mask_gen"
+             << "random_gen"
              << ","
-             << "HE_processing"
+             << "HE_eval"
              << ","
-             << "decryption" << std::endl;
-        file << encryption_duration << "," << mask_gen_duration << "," << HE_conv_duration << "," << decryption_duration << std::endl;
+             << "decryption" 
+             << ","
+             << "total_duration" << std::endl;
+        file << encryption_duration << "," << mask_gen_duration << "," << HE_conv_duration << "," << decryption_duration << "," << total_duration << std::endl;
         file.close();
         std::cout << "Data written to " << filePath << std::endl;
     }

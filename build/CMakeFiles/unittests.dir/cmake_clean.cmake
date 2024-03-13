@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../bin/unittests"
-  "../bin/unittests.pdb"
+  "/mnt/mohammad/cryptonite_bench/bin/unittests"
+  "/mnt/mohammad/cryptonite_bench/bin/unittests.pdb"
   "CMakeFiles/unittests.dir/src/bin/unittests.cpp.o"
   "CMakeFiles/unittests.dir/src/bin/unittests.cpp.o.d"
   "CMakeFiles/unittests.dir/src/lib/im2col.cpp.o"

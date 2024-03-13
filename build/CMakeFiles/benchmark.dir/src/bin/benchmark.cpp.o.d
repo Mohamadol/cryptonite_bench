@@ -1,5 +1,5 @@
 CMakeFiles/benchmark.dir/src/bin/benchmark.cpp.o: \
- /home/mohamadolyaiy/cryptonite_bench/src/bin/benchmark.cpp \
+ /mnt/mohammad/cryptonite_bench/src/bin/benchmark.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -224,17 +224,17 @@ CMakeFiles/benchmark.dir/src/bin/benchmark.cpp.o: \
  /usr/include/c++/11/bits/fs_fwd.h /usr/include/c++/11/bits/fs_path.h \
  /usr/include/c++/11/codecvt /usr/include/c++/11/bits/fs_dir.h \
  /usr/include/c++/11/bits/fs_ops.h /usr/include/c++/11/math.h \
- /home/mohamadolyaiy/cryptonite_bench/src/lib/conv2d.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/seal.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/batchencoder.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/context.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/encryptionparams.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/memorymanager.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/defines.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/msvc.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/clang.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/gcc.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-build/native/src/seal/util/config.h \
+ /mnt/mohammad/cryptonite_bench/src/lib/conv2d.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/seal.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/batchencoder.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/context.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/encryptionparams.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/memorymanager.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/defines.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/msvc.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/clang.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/gcc.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-build/native/src/seal/util/config.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/x86intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h \
@@ -325,15 +325,15 @@ CMakeFiles/benchmark.dir/src/bin/benchmark.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/fma4intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/ammintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xopintrin.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/globals.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/hestdparms.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/globals.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/hestdparms.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/mempool.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/common.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/mempool.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/common.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
@@ -343,57 +343,57 @@ CMakeFiles/benchmark.dir/src/bin/benchmark.cpp.o: \
  /usr/include/c++/11/bits/hashtable_policy.h \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/locks.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/locks.h \
  /usr/include/c++/11/shared_mutex /usr/include/c++/11/atomic \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/modulus.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/serialization.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/version.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintcore.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/pointer.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/modulus.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/serialization.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/version.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintcore.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/pointer.h \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/ztools.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/dynarray.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src/include/gsl/span \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src/include/gsl/gsl_assert \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src/include/gsl/gsl_byte \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/randomgen.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/hash.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/galois.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/iterator.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/ntt.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/dwthandler.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarithsmallmod.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/numth.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarith.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/rns.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/plaintext.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/valcheck.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/polycore.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/ciphertext.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/ckks.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/croots.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/ztools.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/dynarray.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src/include/gsl/span \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src/include/gsl/gsl_assert \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src/include/gsl/gsl_byte \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/randomgen.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/hash.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/galois.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/iterator.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/ntt.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/dwthandler.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarithsmallmod.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/numth.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/uintarith.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/rns.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/plaintext.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/valcheck.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/polycore.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/ciphertext.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/ckks.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/croots.h \
  /usr/include/c++/11/complex \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/decryptor.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/secretkey.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/encryptor.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/publickey.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/serializable.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/streambuf.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/evaluator.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/galoiskeys.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/kswitchkeys.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/relinkeys.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/keygenerator.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/randomtostd.h \
- /home/mohamadolyaiy/cryptonite_bench/src/lib/interface.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/decryptor.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/secretkey.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/encryptor.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/publickey.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/serializable.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/streambuf.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/evaluator.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/galoiskeys.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/kswitchkeys.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/relinkeys.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/keygenerator.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/randomtostd.h \
+ /mnt/mohammad/cryptonite_bench/src/lib/interface.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/mohamadolyaiy/cryptonite_bench/src/bin/run_conv.cpp \
- /home/mohamadolyaiy/cryptonite_bench/src/lib/fc_layer.h \
- /home/mohamadolyaiy/cryptonite_bench/src/lib/im2col.h \
+ /mnt/mohammad/cryptonite_bench/src/bin/run_conv.cpp \
+ /mnt/mohammad/cryptonite_bench/src/lib/fc_layer.h \
+ /mnt/mohammad/cryptonite_bench/src/lib/im2col.h \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -590,4 +590,4 @@ CMakeFiles/benchmark.dir/src/bin/benchmark.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/mohamadolyaiy/cryptonite_bench/src/lib/interface.h
+ /mnt/mohammad/cryptonite_bench/src/lib/interface.h

@@ -1,5 +1,5 @@
 _deps/seal-build/CMakeFiles/seal.dir/native/src/seal/util/blake2xb.c.o: \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2xb.c \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2xb.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -34,5 +34,5 @@ _deps/seal-build/CMakeFiles/seal.dir/native/src/seal/util/blake2xb.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2-impl.h
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2.h \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/blake2-impl.h

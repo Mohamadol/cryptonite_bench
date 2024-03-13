@@ -1,4 +1,4 @@
-# Install script for directory: /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal
+# Install script for directory: /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,39 +42,39 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/SEAL-3.6/seal" TYPE FILE FILES
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/batchencoder.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/ciphertext.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/ckks.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/modulus.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/context.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/decryptor.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/dynarray.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/encryptionparams.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/encryptor.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/evaluator.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/galoiskeys.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/keygenerator.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/kswitchkeys.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/memorymanager.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/plaintext.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/publickey.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/randomgen.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/randomtostd.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/relinkeys.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/seal.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/secretkey.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/serializable.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/serialization.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/valcheck.h"
-    "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/version.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/batchencoder.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/ciphertext.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/ckks.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/modulus.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/context.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/decryptor.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/dynarray.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/encryptionparams.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/encryptor.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/evaluator.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/galoiskeys.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/keygenerator.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/kswitchkeys.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/memorymanager.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/plaintext.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/publickey.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/randomgen.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/randomtostd.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/relinkeys.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/seal.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/secretkey.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/serializable.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/serialization.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/valcheck.h"
+    "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/version.h"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-build/native/src/seal/util/cmake_install.cmake")
+  include("/mnt/mohammad/cryptonite_bench/build/_deps/seal-build/native/src/seal/util/cmake_install.cmake")
 
 endif()
 

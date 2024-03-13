@@ -1,5 +1,5 @@
 _deps/seal-build/CMakeFiles/seal.dir/native/src/seal/util/fips202.c.o: \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/fips202.c \
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/fips202.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
@@ -17,4 +17,4 @@ _deps/seal-build/CMakeFiles/seal.dir/native/src/seal/util/fips202.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/fips202.h
+ /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/util/fips202.h

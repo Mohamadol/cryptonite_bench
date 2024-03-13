@@ -1,4 +1,4 @@
-# Install script for directory: /home/mohamadolyaiy/cryptonite_bench
+# Install script for directory: /mnt/mohammad/cryptonite_bench
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,13 +42,13 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE STATIC_LIBRARY FILES "/home/mohamadolyaiy/cryptonite_bench/build/libDelphiOffline.a")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE STATIC_LIBRARY FILES "/mnt/mohammad/cryptonite_bench/build/libDelphiOffline.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-build/cmake_install.cmake")
+  include("/mnt/mohammad/cryptonite_bench/build/_deps/seal-build/cmake_install.cmake")
 
 endif()
 
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mohamadolyaiy/cryptonite_bench/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/mohammad/cryptonite_bench/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

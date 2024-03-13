@@ -1,4 +1,4 @@
-# Install script for directory: /home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src
+# Install script for directory: /mnt/mohammad/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,27 +42,31 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src/include/gsl")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/thirdparty/msgsl-src/include/gsl")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake")
-    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+    file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake"
-         "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-build/thirdparty/msgsl-src/CMakeFiles/Export/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake")
-    if(EXPORT_FILE_CHANGED)
-      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL/Microsoft.GSLConfig-*.cmake")
-      if(OLD_CONFIG_FILES)
-        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
-        file(REMOVE ${OLD_CONFIG_FILES})
+         "/mnt/mohammad/cryptonite_bench/build/_deps/seal-build/thirdparty/msgsl-src/CMakeFiles/Export/3a8b88576bd6c54de0752affb893e3fe/Microsoft.GSLConfig.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL/Microsoft.GSLConfig-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
       endif()
+      unset(_cmake_old_config_files)
     endif()
+    unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL" TYPE FILE FILES "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-build/thirdparty/msgsl-src/CMakeFiles/Export/share/cmake/Microsoft.GSL/Microsoft.GSLConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL" TYPE FILE FILES "/mnt/mohammad/cryptonite_bench/build/_deps/seal-build/thirdparty/msgsl-src/CMakeFiles/Export/3a8b88576bd6c54de0752affb893e3fe/Microsoft.GSLConfig.cmake")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL" TYPE FILE FILES "/home/mohamadolyaiy/cryptonite_bench/build/_deps/seal-build/thirdparty/msgsl-src/Microsoft.GSLConfigVersion.cmake")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmake/Microsoft.GSL" TYPE FILE FILES "/mnt/mohammad/cryptonite_bench/build/_deps/seal-build/thirdparty/msgsl-src/Microsoft.GSLConfigVersion.cmake")
 endif()
 

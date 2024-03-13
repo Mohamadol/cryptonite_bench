@@ -1,5 +1,5 @@
 CMakeFiles/interface.dir/src/bin/interface.c.o: \
- /home/mohamadolyaiy/cryptonite_bench/src/bin/interface.c \
+ /mnt/mohammad/cryptonite_bench/src/bin/interface.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -53,7 +53,7 @@ CMakeFiles/interface.dir/src/bin/interface.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/assert.h \
- /home/mohamadolyaiy/cryptonite_bench/src/lib/interface.h \
+ /mnt/mohammad/cryptonite_bench/src/lib/interface.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
