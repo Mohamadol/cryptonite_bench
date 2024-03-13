@@ -1,7 +1,8 @@
 
 EXP_NAME="resnet18"
-CORES=8
-MEMORY=30
+CORES=32
+THREADS=16
+MEMORY=120
 
 cd ./../../
 OUT_DIR="./benchmarking/outputs/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/"
@@ -17,7 +18,7 @@ pid="$!"
 # do
 # done
 
-./bin/benchmark $CORES $CORES $MEMORY > "${OUT_DIR}/run.txt"
+./bin/benchmark $THREADS $CORES $MEMORY > "${OUT_DIR}/run.txt"
 
 kill $pid
 
