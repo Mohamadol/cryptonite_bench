@@ -96,7 +96,6 @@ int main(int argc, char **argv)
     ServerFHE sfhe = server_keygen(key_share);
 
     // ResNet-50 Benchmarks
-    // string EXP_NAME = "resnet50";
     // int img_size[48] = {56, 58, 56, 56, 58, 56, 56, 58, 56, 56, 30, 28, 28, 30, 28, 28, 30, 28, 28, 30, 28, 28, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 16, 14, 14, 9, 7, 7, 9, 7, 7, 9, 7};
     // int kernel_size[48] = {1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1};
     // int pads[48] = {0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0};
@@ -106,7 +105,6 @@ int main(int argc, char **argv)
     // int num_layers = 48;
 
     // ResNet-18 Benchmarks
-    string EXP_NAME = "resnet18";
     int img_size[17] = {30, 30, 30, 30, 30, 30, 16, 16, 16, 16, 9, 9, 9, 9, 6, 6, 6};
     int kernel_size[17] = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
     int pads[17] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
@@ -115,14 +113,18 @@ int main(int argc, char **argv)
     int stride[17] = {1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1};
     int num_layers = 17;
 
-    printf("Number of Layers : %d\n", num_layers);
 
-    printf("Number of args: %d\n", argc);
     int number_of_threads = atoi(argv[1]);
-    printf("Number of Threads: %d\n", number_of_threads);
     int vcores = atoi(argv[2]);
     int memory = atoi(argv[3]);
+    string EXP_NAME = argv[4];
+    int batch_id = atoi(argv[5]);
 
+    cout << "Number of Layers : " << num_layers<<endl;
+    cout << "Number of args: " << argc <<endl;
+    cout << "Number of Threads: " << number_of_threads <<endl;
+    cout << "batch id: " << batch_id<<endl;
+    cout << "Exp name: " << EXP_NAME <<endl;
 
     printf("Encrypting...\n");
     double start_time_enc = omp_get_wtime();
@@ -185,7 +187,7 @@ int main(int argc, char **argv)
     //--------------------------------- saving the file ---------------------------------
     string system_config = "_" + to_string(vcores) + "_" + to_string(vcores) + "_" + to_string(memory) + "_" + to_string(memory);
     std::filesystem::path dirPath = "./benchmarking/data/" + EXP_NAME + "/" + system_config;
-    std::filesystem::path filePath = dirPath / ("all_layers.csv");
+    std::filesystem::path filePath = dirPath / ("all_layers_batchid" + to_string(batch_id) + ".csv");
     if (!std::filesystem::exists(dirPath))
         std::filesystem::create_directories(dirPath);
 

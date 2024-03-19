@@ -49,8 +49,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/mohammad/cryptonite_bench/build/_deps/seal-src/native/src/seal/valcheck.cpp" "_deps/seal-build/CMakeFiles/seal.dir/native/src/seal/valcheck.cpp.o" "gcc" "_deps/seal-build/CMakeFiles/seal.dir/native/src/seal/valcheck.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
