@@ -1,8 +1,8 @@
 
-EXP_NAME="resnet18_throughput"
-CORES=32
-THREADS=32
-MEMORY=120
+EXP_NAME="resnet18_throughput_swap"
+CORES=8
+THREADS=8
+MEMORY=30
 BATCH=3
 
 cd ./../../
