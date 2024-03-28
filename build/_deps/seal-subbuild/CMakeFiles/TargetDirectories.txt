@@ -1,3 +1,0 @@
-/mnt/mohammad/cryptonite_bench/build/_deps/seal-subbuild/CMakeFiles/seal-populate.dir
-/mnt/mohammad/cryptonite_bench/build/_deps/seal-subbuild/CMakeFiles/edit_cache.dir
-/mnt/mohammad/cryptonite_bench/build/_deps/seal-subbuild/CMakeFiles/rebuild_cache.dir
