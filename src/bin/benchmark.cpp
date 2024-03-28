@@ -118,11 +118,13 @@ int main(int argc, char **argv)
     int vcores = atoi(argv[2]);
     int memory = atoi(argv[3]);
     string EXP_NAME = argv[4];
-    int batch_id = atoi(argv[5]);
+    int total_batches = atoi(argv[5]);
+    int batch_id = atoi(argv[6]);
 
     cout << "Number of Layers : " << num_layers<<endl;
     cout << "Number of args: " << argc <<endl;
     cout << "Number of Threads: " << number_of_threads <<endl;
+    cout << "total batches: " << total_batches <<endl;
     cout << "batch id: " << batch_id<<endl;
     cout << "Exp name: " << EXP_NAME <<endl;
 
@@ -186,7 +188,9 @@ int main(int argc, char **argv)
 
     //--------------------------------- saving the file ---------------------------------
     string system_config = "_" + to_string(vcores) + "_" + to_string(vcores) + "_" + to_string(memory) + "_" + to_string(memory);
-    std::filesystem::path dirPath = "./benchmarking/data/" + EXP_NAME + "/" + system_config;
+    string batch_size = "_1__batch_size";
+    string batches = "_" + to_string(total_batches) + "__batches";
+    std::filesystem::path dirPath = "./benchmarking/data/" + EXP_NAME + "/" + system_config + "/" + batch_size + "/" + batches;
     std::filesystem::path filePath = dirPath / ("all_layers_batchid" + to_string(batch_id) + ".csv");
     if (!std::filesystem::exists(dirPath))
         std::filesystem::create_directories(dirPath);
