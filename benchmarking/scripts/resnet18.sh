@@ -11,7 +11,7 @@ DATA_DIR="./benchmarking/data/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}
 mkdir -p $OUT_DIR
 mkdir -p $DATA_DIR
 
-./benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_usage.csv" &
+/mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_usage.csv" &
 pid="$!"
 
 # for i in {1..8}

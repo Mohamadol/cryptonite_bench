@@ -1,0 +1,13 @@
+Number of Layers : 17
+Number of args: 7
+Number of Threads: 8
+total batches: 8
+batch id: 8
+Exp name: resnet18_throughput_swap
+Encrypting...
+All Encryptions: 5.611431
+Performing convolutions
+All Convs: 1154.196636
+Decrypting...
+All Decryptions: 1.572977
+Data written to "./benchmarking/data/resnet18_throughput_swap/_16_16_60_60/_1__batch_size/_8__batches/all_layers_batchid8.csv"

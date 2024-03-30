@@ -22,5 +22,5 @@ while true; do
   echo "$timestamp,$total,$used,$free" >> "$output_file"
 
   # Wait for 10 seconds
-  sleep 20
+  sleep 5
 done
