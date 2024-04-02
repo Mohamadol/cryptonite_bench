@@ -3,11 +3,10 @@
 SUB_EXP_NAME=""
 EXP_NAME="resnet18_throughput_swap${SUB_EXP_NAME}"
 # EXP_NAME="resnet18_throughput${SUB_EXP_NAME}"
-CORES=16
-THREADS=8
-MEMORY=60
-TOTAL_BATCHES=8
-
+CORES=32
+THREADS=32
+MEMORY=120
+TOTAL_BATCHES=4
 
 cd ./../../
 OUT_DIR="./benchmarking/outputs/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches"
