@@ -1,12 +1,10 @@
 
-# SUB_EXP_NAME="/_10_swappiness/_35_dirty_ratio"
 SUB_EXP_NAME=""
-EXP_NAME="resnet18_throughput_swap${SUB_EXP_NAME}"
-# EXP_NAME="resnet18_throughput${SUB_EXP_NAME}"
-CORES=32
-THREADS=32
-MEMORY=120
-TOTAL_BATCHES=4
+EXP_NAME="resnet18_throughput${SUB_EXP_NAME}"
+CORES=8
+THREADS=8
+MEMORY=30
+TOTAL_BATCHES=1
 
 cd ./../../
 OUT_DIR="./benchmarking/outputs/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches"
@@ -18,9 +16,8 @@ mkdir -p $DATA_DIR
 /mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_usage.csv" &
 MEM_pid="$!"
 
-# Start timing
+
 start=$(date +%s%N)
-# pids=()
 declare -a pids
 cleanup() {
     echo "Cleaning up..."
