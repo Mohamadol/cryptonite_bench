@@ -1,1 +1,1 @@
-Total duration: 3914843 ms
+Total duration: 2041164 ms

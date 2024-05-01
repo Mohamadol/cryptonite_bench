@@ -1,0 +1,6 @@
+Number of Layers : 48
+Number of args: 7
+Number of Threads: 48
+total batches: 1
+batch id: 1
+Exp name: resnet50_throughput
