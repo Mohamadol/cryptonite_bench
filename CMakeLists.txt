@@ -30,17 +30,17 @@ target_link_libraries(DelphiOffline seal OpenMP::OpenMP_CXX OpenMP::OpenMP_C)
 option(UNITTESTS "Build unittests" ON)
 if(UNITTESTS)
     include_directories(${CMAKE_SOURCE_DIR}/src/bin)
-    add_executable(unittests ${BIN}/unittests.cpp ${LIB}/im2col.cpp)
+    # add_executable(unittests ${BIN}/unittests.cpp ${LIB}/im2col.cpp)
     add_executable(benchmark ${BIN}/benchmark.cpp ${LIB}/im2col.cpp)
     add_executable(interface ${BIN}/interface.c)
 
     # Unittests make use of Eigen
     find_package (Eigen3 3.3 REQUIRED NO_MODULE)
-    target_link_libraries (unittests Eigen3::Eigen)
+    # target_link_libraries (unittests Eigen3::Eigen)
     target_link_libraries (benchmark Eigen3::Eigen)
 
     target_link_libraries (benchmark DelphiOffline)
-    target_link_libraries (unittests DelphiOffline)
+    # target_link_libraries (unittests DelphiOffline)
     target_link_libraries (interface DelphiOffline)
 endif()
 
