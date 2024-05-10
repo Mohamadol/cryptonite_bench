@@ -431,7 +431,7 @@ vector<Plaintext> HE_preprocess_filters(const u64 *const *const *filters, const 
             {
 
                 unsigned long id = conv * data.inp_ct * data.filter_size + ct_idx * data.filter_size + f;
-                if (id > num_pts_pruned)
+                if (id >= num_pts_pruned)
                     continue;
 
                 batch_encoder.encode(masks[conv][ct_idx][f],
@@ -464,8 +464,12 @@ vector<Plaintext> HE_preprocess_filters(const u64 *const *const *filters, const 
 
 vector<vector<Ciphertext>> HE_conv(vector<Plaintext> &masks,
                                    vector<vector<Ciphertext>> &rotations, const Metadata &data, Evaluator &evaluator,
-                                   RelinKeys &relin_keys, Ciphertext &zero)
+                                   RelinKeys &relin_keys, Ciphertext &zero, float sparsity)
 {
+
+    unsigned long num_pts = data.convs * data.inp_ct * data.filter_size;
+    unsigned long num_pts_pruned = ceil(sparsity * num_pts);
+
     vector<vector<Ciphertext>> result(data.convs, vector<Ciphertext>(data.inp_ct));
     // Init the result vector to all 0
     for (int conv = 0; conv < data.convs; conv++)
@@ -502,6 +506,9 @@ vector<vector<Ciphertext>> HE_conv(vector<Plaintext> &masks,
                     unsigned long RS = data.filter_size;
                     unsigned long f_id = f;
                     unsigned long mask_id = k_id * C_ * RS + c_id * RS + f_id;
+
+                    if (mask_id >= num_pts_pruned)
+                        continue;
 
                     Ciphertext tmp;
                     evaluator.multiply_plain(rotations[ct_idx][f],

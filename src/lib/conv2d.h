@@ -68,7 +68,7 @@ vector<Plaintext> HE_preprocess_filters(const u64 *const *const *filters, const 
 
 /* Performs convolution for an output packed image. Returns the intermediate rotation sets */
 vector<vector<Ciphertext>> HE_conv(vector<Plaintext> &masks, vector<vector<Ciphertext>> &rotations,
-                                   const Metadata &data, Evaluator &evaluator, RelinKeys &relin_keys, Ciphertext &zero);
+                                   const Metadata &data, Evaluator &evaluator, RelinKeys &relin_keys, Ciphertext &zero, float sparsity);
 
 /* Rotates and adds an output packed convolution result to produce a final, tight output */
 vector<Ciphertext> HE_output_rotations(vector<vector<Ciphertext>> convs, const Metadata &data, Evaluator &evaluator,

@@ -267,6 +267,8 @@ char **server_conv_preprocess(const ServerFHE *sfhe, const Metadata *data, const
     // Preprocess filters
     auto masks_vec = HE_preprocess_filters(filters, *data, *encoder, sparsity);
 
+    // cout << "came here1 ..." << endl;
+
     // Recast masks to use opaque pointers for C interface
     char **masks = new char *[masks_vec.size()];
     for (int i = 0; i < masks_vec.size(); i++)
@@ -437,11 +439,22 @@ void server_conv_online(const ServerFHE *sfhe, const Metadata *data, SerialCT ci
     }
 
     // Recast opaque pointers to vectors
-    vector<Plaintext> masks_vec(data->convs * data->inp_ct * data->filter_size);
+    // vector<Plaintext> masks_vec(data->convs * data->inp_ct * data->filter_size);
+    // for (int i = 0; i < masks_vec.size(); i++)
+    // {
+    //     masks_vec[i] = *(reinterpret_cast<Plaintext *>(masks[i]));
+    // }
+
+    unsigned long num_pts = data->convs * data->inp_ct * data->filter_size;
+    unsigned long num_pts_pruned = ceil(sparsity * num_pts);
+    // cout << "came here3 ... " << endl;
+    vector<Plaintext> masks_vec(num_pts_pruned);
     for (int i = 0; i < masks_vec.size(); i++)
     {
         masks_vec[i] = *(reinterpret_cast<Plaintext *>(masks[i]));
     }
+    // cout << "passed here ... " << endl;
+
     vector<Plaintext> linear_share(data->out_ct);
     for (int ct_idx = 0; ct_idx < data->out_ct; ct_idx++)
     {
@@ -457,7 +470,7 @@ void server_conv_online(const ServerFHE *sfhe, const Metadata *data, SerialCT ci
     Ciphertext *zero = reinterpret_cast<Ciphertext *>(sfhe->zero);
 
     // Evaluation
-    auto rotation_sets = HE_conv(masks_vec, ct_vec, *data, *evaluator, *relin_keys, *zero);
+    auto rotation_sets = HE_conv(masks_vec, ct_vec, *data, *evaluator, *relin_keys, *zero, sparsity);
     vector<Ciphertext> linear = HE_output_rotations(rotation_sets, *data, *evaluator, *gal_keys, *zero);
 
     // Secret share the result

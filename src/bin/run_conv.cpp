@@ -47,7 +47,7 @@ ClientShares interface_conv(ServerFHE &sfhe, ClientFHE &cfhe, Metadata data, Ima
     // ------------------------------------------------
     double time_start_eval_conv = omp_get_wtime();
 
-    server_conv_online(&sfhe, &data, client_shares.input_ct, masks, &server_shares);
+    server_conv_online(&sfhe, &data, client_shares.input_ct, masks, &server_shares, 0);
 
     double time_end_eval_conv = omp_get_wtime();
     double time_diff_eval_conv = time_end_eval_conv - time_start_eval_conv;
@@ -108,7 +108,7 @@ void he_conv(ClientFHE &cfhe, ServerFHE &sfhe, ClientShares &client_shares,
                                   out_chans, stride_h, stride_w, pad_valid);
 
     char **masks = server_conv_preprocess(&sfhe, &data, filters, sparsity);
-
+    // cout << "came here2 ... " << endl;
     server_conv_online(&sfhe, &data, client_shares.input_ct, masks, &shares, sparsity);
 }
 

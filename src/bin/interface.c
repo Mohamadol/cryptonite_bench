@@ -91,7 +91,7 @@ void conv(ClientFHE *cfhe, ServerFHE *sfhe, int image_h, int image_w, int filter
     printf("Convolution: ");
     startTime = (float)clock() / CLOCKS_PER_SEC;
 
-    server_conv_online(sfhe, &data, client_shares.input_ct, masks, &server_shares);
+    server_conv_online(sfhe, &data, client_shares.input_ct, masks, &server_shares, 0.0);
 
     endTime = (float)clock() / CLOCKS_PER_SEC;
     timeElapsed = endTime - startTime;

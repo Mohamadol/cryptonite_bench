@@ -112,7 +112,7 @@ int main(int argc, char **argv)
     int in_c[17] = {3, 64, 64, 64, 64, 64, 128, 128, 128, 128, 256, 256, 256, 256, 512, 512, 512};
     int stride[17] = {1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1};
     int num_layers = 17;
-    std::vector<float> sparsity(17, 0.9);
+    std::vector<float> sparsity(17, 1.0);
 
     int number_of_threads = atoi(argv[1]);
     int vcores = atoi(argv[2]);

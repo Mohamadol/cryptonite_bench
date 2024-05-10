@@ -10,6 +10,9 @@
         "multi_span": "cpp",
         "span": "cpp",
         "string_span": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "cmath": "cpp",
+        "streambuf": "cpp",
+        "ostream": "cpp"
     }
 }
