@@ -471,7 +471,7 @@ void server_conv_online(const ServerFHE *sfhe, const Metadata *data, SerialCT ci
 
     // Evaluation
     auto rotation_sets = HE_conv(masks_vec, ct_vec, *data, *evaluator, *relin_keys, *zero, sparsity);
-    for (int conv = 0; conv < data->convs * data->inp_ct * data->filter_size; conv++)
+    for (int conv = 0; conv < num_pts_pruned; conv++)
     {
         delete (Plaintext *)masks[conv];
     }
