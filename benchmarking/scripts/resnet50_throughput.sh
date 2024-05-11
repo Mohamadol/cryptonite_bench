@@ -1,8 +1,8 @@
 SUB_EXP_NAME=""
-EXP_NAME="resnet50_throughput${SUB_EXP_NAME}"
+EXP_NAME="resnet50_latency${SUB_EXP_NAME}"
 CORES=8
-THREADS=4
-MEMORY=30
+THREADS=2
+MEMORY=150
 TOTAL_BATCHES=1
 
 cd ./../../
@@ -12,7 +12,7 @@ DATA_DIR="./benchmarking/data/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}
 mkdir -p $OUT_DIR
 mkdir -p $DATA_DIR
 
-/mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_usage.csv" &
+/mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_${THREADS}_threads.csv" &
 MEM_pid="$!"
 
 
@@ -29,7 +29,7 @@ trap cleanup SIGINT SIGTERM
 
 for ((i=1; i<=TOTAL_BATCHES; i++))
 do
-    ./bin/benchmark "$THREADS" "$CORES" "$MEMORY" "$EXP_NAME" "$TOTAL_BATCHES" "$i" > "${OUT_DIR}/run_batchid${i}.txt" &
+    ./bin/benchmark "$THREADS" "$CORES" "$MEMORY" "$EXP_NAME" "$TOTAL_BATCHES" "$i" > "${OUT_DIR}/_${THREADS}_threads_run_batchid${i}.txt" &
     pids+=($!)
 done
 
@@ -43,7 +43,7 @@ end=$(date +%s%N)
 
 # Calculate duration in milliseconds
 duration=$(( (end - start) / 1000000 ))
-echo "Total duration: $duration ms" > "${OUT_DIR}/time_elapsed.txt"
+echo "Total duration: $duration ms" > "${OUT_DIR}/_${THREADS}_time_elapsed.txt"
 
 kill $MEM_pid
 wait
