@@ -1,0 +1,14 @@
+Number of Layers : 48
+Number of args: 7
+Number of Threads: 8
+total batches: 1
+batch id: 1
+Exp name: resnet50_encrypted-sparsity
+Encrypting...
+All Encryptions: 23.916613
+Performing convolutions
+All Convs: 877.625713
+Decrypting...
+All Decryptions: 3.544643
+Data written to "./benchmarking/data/resnet50_encrypted-sparsity/_8_8_256_256/_1__batch_size/_1__batches/all_layers_batchid1.csv"
+Memory: 111GB

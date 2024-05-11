@@ -1,8 +1,8 @@
-SUB_EXP_NAME=""
-EXP_NAME="resnet50_throughput${SUB_EXP_NAME}"
+SUB_EXP_NAME="_dense"
+EXP_NAME="resnet50${SUB_EXP_NAME}"
 CORES=8
-THREADS=4
-MEMORY=30
+THREADS=8
+MEMORY=256
 TOTAL_BATCHES=1
 
 cd ./../../
@@ -12,8 +12,8 @@ DATA_DIR="./benchmarking/data/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}
 mkdir -p $OUT_DIR
 mkdir -p $DATA_DIR
 
-/mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_usage.csv" &
-MEM_pid="$!"
+# /mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_usage.csv" &
+# MEM_pid="$!"
 
 
 start=$(date +%s%N)
@@ -45,5 +45,5 @@ end=$(date +%s%N)
 duration=$(( (end - start) / 1000000 ))
 echo "Total duration: $duration ms" > "${OUT_DIR}/time_elapsed.txt"
 
-kill $MEM_pid
-wait
+# kill $MEM_pid
+# wait
