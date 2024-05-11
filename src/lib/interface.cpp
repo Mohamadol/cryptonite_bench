@@ -471,6 +471,11 @@ void server_conv_online(const ServerFHE *sfhe, const Metadata *data, SerialCT ci
 
     // Evaluation
     auto rotation_sets = HE_conv(masks_vec, ct_vec, *data, *evaluator, *relin_keys, *zero, sparsity);
+    for (int conv = 0; conv < data->convs * data->inp_ct * data->filter_size; conv++)
+    {
+        delete (Plaintext *)masks[conv];
+    }
+    delete[] masks;
     vector<Ciphertext> linear = HE_output_rotations(rotation_sets, *data, *evaluator, *gal_keys, *zero);
 
     // Secret share the result
@@ -481,6 +486,8 @@ void server_conv_online(const ServerFHE *sfhe, const Metadata *data, SerialCT ci
 
     // Serialize the resulting ciphertexts into bytearrays and store in ServerShares
     shares->linear_ct = serialize_ct(linear);
+
+    // server_conv_free(data, masks, shares);
 }
 
 void server_fc_online(const ServerFHE *sfhe, const Metadata *data, SerialCT ciphertext,
