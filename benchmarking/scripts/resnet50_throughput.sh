@@ -1,19 +1,19 @@
-SUB_EXP_NAME="_dense"
+SUB_EXP_NAME="_latency_sparse"
 EXP_NAME="resnet50${SUB_EXP_NAME}"
 CORES=8
-THREADS=8
-MEMORY=256
+THREADS=1
+MEMORY=150
 TOTAL_BATCHES=1
 
 cd ./../../
-OUT_DIR="./benchmarking/outputs/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches"
+OUT_DIR="./benchmarking/outputs/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${THREADS}_${TOTAL_BATCHES}__batches"
 DATA_DIR="./benchmarking/data/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches"
 
 mkdir -p $OUT_DIR
 mkdir -p $DATA_DIR
 
-# /mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_usage.csv" &
-# MEM_pid="$!"
+/mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/_${THREADS}_memory.csv" &
+MEM_pid="$!"
 
 
 start=$(date +%s%N)
@@ -29,7 +29,7 @@ trap cleanup SIGINT SIGTERM
 
 for ((i=1; i<=TOTAL_BATCHES; i++))
 do
-    ./bin/benchmark "$THREADS" "$CORES" "$MEMORY" "$EXP_NAME" "$TOTAL_BATCHES" "$i" > "${OUT_DIR}/run_batchid${i}.txt" &
+    ./bin/benchmark "$THREADS" "$CORES" "$MEMORY" "$EXP_NAME" "$TOTAL_BATCHES" "$i" > "${OUT_DIR}/_${THREADS}_run_batchid${i}.txt" &
     pids+=($!)
 done
 
@@ -43,7 +43,7 @@ end=$(date +%s%N)
 
 # Calculate duration in milliseconds
 duration=$(( (end - start) / 1000000 ))
-echo "Total duration: $duration ms" > "${OUT_DIR}/time_elapsed.txt"
+echo "Total duration: $duration ms" > "${OUT_DIR}/_${THREADS}_time_elapsed.txt"
 
-# kill $MEM_pid
-# wait
+kill $MEM_pid
+wait
