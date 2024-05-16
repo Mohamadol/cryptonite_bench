@@ -1,19 +1,18 @@
-
 SUB_EXP_NAME=""
-EXP_NAME="resnet18_throughput${SUB_EXP_NAME}"
-CORES=16
+EXP_NAME="resnet18_latency${SUB_EXP_NAME}"
+CORES=8
 THREADS=8
-MEMORY=60
-TOTAL_BATCHES=2
+MEMORY=30
+TOTAL_BATCHES=1
 
 cd ./../../
-OUT_DIR="./benchmarking/outputs/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches"
-DATA_DIR="./benchmarking/data/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches"
+OUT_DIR="./benchmarking/outputs/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches/_${THREADS}_threads"
+DATA_DIR="./benchmarking/data/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches/_${THREADS}_threads"
 
 mkdir -p $OUT_DIR
 mkdir -p $DATA_DIR
 
-/mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_usage.csv" &
+/mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory.csv" &
 MEM_pid="$!"
 
 
@@ -44,7 +43,7 @@ end=$(date +%s%N)
 
 # Calculate duration in milliseconds
 duration=$(( (end - start) / 1000000 ))
-echo "Total duration: $duration ms" > "${OUT_DIR}/time_elapsed.txt"
+echo "Total duration: $duration ms" > "${OUT_DIR}/_${THREADS}_time_elapsed.txt"
 
 kill $MEM_pid
 wait
