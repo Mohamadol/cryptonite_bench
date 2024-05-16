@@ -1,18 +1,18 @@
 SUB_EXP_NAME=""
 EXP_NAME="resnet50_latency${SUB_EXP_NAME}"
-CORES=8
-THREADS=1
-MEMORY=150
+CORES=24
+THREADS=24
+MEMORY=432
 TOTAL_BATCHES=1
 
 cd ./../../
-OUT_DIR="./benchmarking/outputs/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches"
-DATA_DIR="./benchmarking/data/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches"
+OUT_DIR="./benchmarking/outputs/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches/_${THREADS}_threads"
+DATA_DIR="./benchmarking/data/${EXP_NAME}/_${CORES}_${CORES}_${MEMORY}_${MEMORY}/_1__batch_size/_${TOTAL_BATCHES}__batches/_${THREADS}_threads"
 
 mkdir -p $OUT_DIR
 mkdir -p $DATA_DIR
 
-/mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory_${THREADS}_threads.csv" &
+/mnt/mohammad/cryptonite_bench/benchmarking/scripts/memory_monitor.sh "${DATA_DIR}/memory.csv" &
 MEM_pid="$!"
 
 
@@ -29,7 +29,7 @@ trap cleanup SIGINT SIGTERM
 
 for ((i=1; i<=TOTAL_BATCHES; i++))
 do
-    ./bin/benchmark "$THREADS" "$CORES" "$MEMORY" "$EXP_NAME" "$TOTAL_BATCHES" "$i" > "${OUT_DIR}/_${THREADS}_threads_run_batchid${i}.txt" &
+    ./bin/benchmark "$THREADS" "$CORES" "$MEMORY" "$EXP_NAME" "$TOTAL_BATCHES" "$i" > "${OUT_DIR}/run_batchid${i}.txt" &
     pids+=($!)
 done
 
