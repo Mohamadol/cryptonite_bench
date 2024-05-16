@@ -1,0 +1,13 @@
+Number of Layers : 17
+Number of args: 7
+Number of Threads: 24
+total batches: 1
+batch id: 1
+Exp name: resnet18_latency
+Encrypting...
+All Encryptions: 4.896626
+Performing convolutions
+All Convs: 94.350565
+Decrypting...
+All Decryptions: 0.237045
+Data written to "./benchmarking/data/resnet18_latency/_24_24_432_432/_1__batch_size/_1__batches/all_layers_batchid1.csv"
